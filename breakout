@@ -1,0 +1,12 @@
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+python -c 'import pty;pty.spawn("/bin/bash")'
+export TERM=xterm
+or 
+export TERM=linux
+or
+export TERM=xterm-256color
+
+Ctrl + Z (and execute the next command )
+stty raw -echo; fg
+followed with twice enter
+stty rows 38 columns 116
